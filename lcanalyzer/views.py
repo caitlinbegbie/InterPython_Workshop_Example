@@ -2,7 +2,7 @@
 
 from matplotlib import pyplot as plt
 import pandas as pd
-    
+
 def plotUnfolded(data,mag_col,time_col,color,marker):
     """
     Display plots of unfolded lightcurves in different bands.
@@ -23,4 +23,3 @@ def plotUnfolded(data,mag_col,time_col,color,marker):
     ax.set_ylabel('Mag')
     fig.tight_layout()
     plt.show()
-
