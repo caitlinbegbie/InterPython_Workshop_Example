@@ -24,7 +24,7 @@ def test_max_mag(test_df, test_colname, expected):
     from lcanalyzer.models import max_mag
     assert max_mag(test_df, test_colname) == expected
 
-"""def test_max_mag_integers():
+def test_max_mag_integers():
     # Test that max_mag function works for integers
     from lcanalyzer.models import max_mag
 
@@ -46,7 +46,7 @@ def test_max_mag_zeros():
     test_input_colname = "b"
     test_output = 0
 
-    assert max_mag(test_input_df, test_input_colname) == test_output"""
+    assert max_mag(test_input_df, test_input_colname) == test_output
 
 @pytest.mark.parametrize(
     "test_df, test_colname, expected",
@@ -69,7 +69,7 @@ def test_mean_mag(test_df, test_colname, expected):
     from lcanalyzer.models import mean_mag
     assert mean_mag(test_df, test_colname) == expected
         
-"""def test_mean_mag_integers():
+def test_mean_mag_integers():
     # Test that mean_mag function works for integers
     from lcanalyzer.models import mean_mag
 
@@ -91,7 +91,7 @@ def test_min_mag_negatives():
     test_input_colname = "b"
     test_output = -7
 
-    assert min_mag(test_input_df, test_input_colname) == test_output"""
+    assert min_mag(test_input_df, test_input_colname) == test_output
 
 
 def test_max_mag_strings():
