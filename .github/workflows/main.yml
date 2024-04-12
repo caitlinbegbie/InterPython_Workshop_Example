@@ -33,7 +33,7 @@ clarify progress - and can be anything
     - name: Test with PyTest
       run: |
         python -m pytest --cov=lcanalyzer.models tests/test_models.py
-...
+
 # now define a single job 'build' (but could define more)
 jobs:
 
@@ -46,7 +46,7 @@ jobs:
 
     runs-on: ${{ matrix.os }}
 
-...
+
 
     # a job is a seq of steps
     steps:
@@ -61,4 +61,4 @@ clarify progress - and can be anything
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-...
+
